@@ -1,0 +1,20 @@
+{
+  "name": "fail-express",
+  "version": "1.0.0",
+  "description": "Fail-express is an express error-handler middleware for JSON APIs",
+  "main": "index.js",
+  "repository": "https://github.com/enbermudas/node-bulletin-board.git",
+  "author": "Enrique Bermúdez <enbermudev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "husky": "^2.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
