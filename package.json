@@ -19,11 +19,14 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-prettier": "^3.1.0",
     "husky": "^2.5.0",
-    "prettier": "^1.18.2"
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "supertest": "^4.0.2"
   },
   "scripts": {
     "lint": "eslint index.js",
-    "lint:fix": "eslint index.js --fix"
+    "lint:fix": "eslint index.js --fix",
+    "test": "jest"
   },
   "husky": {
     "hooks": {
