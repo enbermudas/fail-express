@@ -12,7 +12,7 @@ const failExpress = options => {
 
     const body = { status, message };
 
-    if (!env || options.stackTrace) body.stack = err.stack;
+    if (env === "production" || options.stackTrace) body.stack = err.stack;
 
     if (status >= 500) {
       console.error(err.stack); // eslint-disable-line no-console
