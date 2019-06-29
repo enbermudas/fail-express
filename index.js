@@ -2,7 +2,13 @@ const httpStatus = require("http-status");
 
 const env = process.env.NODE_ENV || "production";
 
+const defaultErrorReporter = error => {
+  console.error(error.stack); // eslint-disable-line no-console
+};
+
 const failExpress = (options = {}) => {
+  const errorReporter = options.errorReporter || defaultErrorReporter;
+
   // eslint-disable-next-line no-unused-vars
   return function handler(err, req, res, next) {
     let status = err.status || err.statusCode || 500;
@@ -20,7 +26,7 @@ const failExpress = (options = {}) => {
     if (err.code) body.code = err.code;
     if (err.type) body.type = err.type;
 
-    if (status >= 500) console.error(err.stack); // eslint-disable-line no-console
+    if (status >= 500) errorReporter(err);
 
     if (options.exposeAdditionalProperties) {
       Object.keys(err).forEach(key => {
