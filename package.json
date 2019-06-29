@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fail-express is an express error-handler middleware for JSON APIs",
   "main": "index.js",
-  "repository": "https://github.com/enbermudas/node-bulletin-board.git",
+  "repository": "https://github.com/enbermudas/fail-express.git",
   "author": "Enrique Bermúdez <enbermudev@gmail.com>",
   "license": "MIT",
   "private": false,
