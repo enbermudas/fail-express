@@ -1,4 +1,8 @@
 # fail-express
+
+[![npm version](https://badge.fury.io/js/fail-express.svg)](https://badge.fury.io/js/fail-express)
+[![Build Status](https://travis-ci.com/enbermudas/fail-express.svg?branch=master)](https://travis-ci.com/enbermudas/fail-express)
+
 Fail-express is an express error-handler middleware for JSON APIs. This library uses [http-status](https://github.com/adaltas/node-http-status).
 
 ## Example
