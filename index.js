@@ -13,7 +13,7 @@ const failExpress = (options = {}) => {
 
     const body = { name, status, message };
 
-    if (env === "production" || options.displayStackTrace) {
+    if (env !== "production" || options.displayStackTrace) {
       body.stack = err.stack;
     }
 
