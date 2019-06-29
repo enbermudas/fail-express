@@ -6,7 +6,7 @@
   "repository": "https://github.com/enbermudas/node-bulletin-board.git",
   "author": "Enrique Bermúdez <enbermudev@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "http-status": "^1.3.2"
   },
