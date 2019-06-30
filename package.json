@@ -30,7 +30,7 @@
     "lint": "eslint index.js",
     "lint:fix": "eslint index.js --fix",
     "test": "jest",
-    "coveralls": "yarn test --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "coveralls": "yarn test --coverage --coverageReporters=text-lcov | coveralls"
   },
   "husky": {
     "hooks": {
