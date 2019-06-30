@@ -7,6 +7,12 @@
   "author": "Enrique Bermúdez <enbermudev@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "express",
+    "middleware",
+    "api",
+    "error-handler"
+  ],
   "dependencies": {
     "http-status": "^1.3.2"
   },
