@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/fail-express.svg)](https://badge.fury.io/js/fail-express)
 [![Build Status](https://travis-ci.com/enbermudas/fail-express.svg?branch=master)](https://travis-ci.com/enbermudas/fail-express)
+[![Coverage Status](https://coveralls.io/repos/github/enbermudas/fail-express/badge.svg?branch=master)](https://coveralls.io/github/enbermudas/fail-express?branch=master)
 
 Fail-express is an express error-handler middleware for JSON APIs. This library uses [http-status](https://github.com/adaltas/node-http-status).
 
