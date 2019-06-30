@@ -18,9 +18,9 @@ router.get('/status', (req, res, next) => {
   res.send('Online!');
 });
 
-router.use(failExpress());
-
 app.use('/api/v1', router);
+
+router.use(failExpress());
 ```
 
 ## API
