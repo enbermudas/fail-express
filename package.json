@@ -13,6 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
+    "coveralls": "^3.0.4",
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^5.1.0",
@@ -28,7 +29,8 @@
   "scripts": {
     "lint": "eslint index.js",
     "lint:fix": "eslint index.js --fix",
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "yarn test --coveragae && cat ./tests/coverage/lcov.info | coveralls"
   },
   "husky": {
     "hooks": {
