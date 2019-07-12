@@ -1,6 +1,6 @@
 {
   "name": "fail-express",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.1",
   "description": "Fail-express is an express error-handler middleware for JSON APIs",
   "main": "index.js",
   "repository": "https://github.com/enbermudas/fail-express.git",
